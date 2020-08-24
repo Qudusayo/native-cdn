@@ -1,3 +1,25 @@
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("aboutbtn").click();
+
 function myFunction(value) {
     const el = document.createElement("textarea");
     el.value = value;
@@ -9,12 +31,15 @@ function myFunction(value) {
     document.execCommand("copy");
     document.body.removeChild(el);
     function showalert() {
-        $("#alert_placeholder").append(
-            `<div class="alert alert-success alert-link" role="alert">Link Copied!!!!</div>`
-        );
+        document.querySelector("#alert_placeholder").innerHTML += 
+            `<div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            URL copied
+            </div>`
+        ;
         setTimeout(function () {
-            $(".alert").remove();
-        }, 2000);
+            document.querySelector("#alert_placeholder").innerHTML = ``;
+        }, 1500);
     }
     showalert();
 }
@@ -64,5 +89,5 @@ fetch(`http://localhost:${window.location.port}/files`)
         });
     });
 
-const date = new Date;
-document.querySelector('#date').textContent = date.getFullYear()
+const date = new Date();
+document.querySelector("#date").textContent = date.getFullYear();

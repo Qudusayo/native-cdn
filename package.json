@@ -1,8 +1,8 @@
 {
   "name": "native-cdn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A local content delivery network for common css and js files",
-  "main": "index.js",
+  "main": "bin/cli.js",
   "bin": {
     "native-cdn": "bin/cli.js"
   },
