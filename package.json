@@ -1,0 +1,40 @@
+{
+  "name": "native-cdn",
+  "version": "1.0.0",
+  "description": "A local content delivery network for common css and js files",
+  "main": "index.js",
+  "bin": {
+    "native-cdn": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qudusayo/native-cdn.git"
+  },
+  "keywords": [
+    "native-cdn",
+    "native-server",
+    "local-cdn",
+    "local-server",
+    "static-server",
+    "cdn"
+  ],
+  "author": "Qudusayo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Qudusayo/native-cdn/issues"
+  },
+  "homepage": "https://github.com/Qudusayo/native-cdn#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clipboardy": "^2.3.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>native cdn</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 class="text-center font-weight-normal py-4">native cdn</h1>
+    <hr>
+    <div class="container">
+        <div id="alert_placeholder"></div>
+
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#css" role="tab">CSS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#js" role="tab">Javascript</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#about" role="tab">About</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" role="tablist">
+            <div class="tab-pane active" id="css" role="tabpanel"></div>
+            <div class="tab-pane" id="js" role="tabpanel"></div>
+            <div class="tab-pane" id="about" role="tabpanel">
+                <h3 class="text-center font-weight-normal pt-4">ABOUT native cdn</h3>
+                <div class="jumbotron">
+                    <b>native cdn</b> is a local content delivery network like <strong>cdnjs</strong> which allows you to
+                    run all your commonly used <b>CSS and Javascript</b> files from a single server offline on your
+                    local machine instead of having multiple and lots of different files in different folders serving
+                    the same purpose
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer fixed-bottom">
+        <div class="container">
+            <span class="text-muted">&copy; native cdn <span id="date"></span></span>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

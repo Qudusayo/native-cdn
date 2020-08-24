@@ -1,0 +1,24 @@
+body {
+    padding-bottom: 30px;
+    background-color: #fdfdfd;
+}
+
+h4 {
+    margin: 40px 0 10px;
+}
+
+svg {
+    cursor: pointer;
+}
+
+footer {
+    background-color: #efefef;
+    text-align: center;
+    color: #000000;
+    padding: 10px 0;
+}
+
+#alert_placeholder {
+    position: fixed;
+    top: 5%;
+}
